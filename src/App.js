@@ -4,15 +4,12 @@ import './App.css';
 
 const App = () => {
   const { data: products, loading, error } = useFetch('https://api.escuelajs.co/api/v1/products');
-
   if (loading) {
     return <div className="loading">Loading...</div>;
   }
-
   if (error) {
     return <div className="error">Error: {error.message}</div>;
   }
-
   return (
     <div className="App">
       <h1>Product Grid</h1>
