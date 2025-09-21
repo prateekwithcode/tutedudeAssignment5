@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Our Awesome Products</h1>
+      <h1>Products</h1>
       <div className="product-grid">
         {products && products.map((product) => (
           <ProductCard key={product.id} product={product} />
